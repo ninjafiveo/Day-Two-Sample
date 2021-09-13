@@ -13,7 +13,14 @@ namespace Day_Two_Sample
             //Console.WriteLine("Software is Awesome.");
 
             //SampleMethod();
-            MeetAlien();
+            //MeetAlien();
+
+            Console.WriteLine("Enter Number 1");
+            int yourNumber1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Number 2");
+            int yourNumber2 = Int32.Parse(Console.ReadLine());
+            ParametersMultiply(yourNumber1, yourNumber2);
+
             Console.ReadKey();
         }
 
@@ -39,6 +46,14 @@ namespace Day_Two_Sample
             Console.ReadKey();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             MeetAlien();
+        }
+
+        static void ParametersMultiply(int number1, int number2)
+        {
+            int result = number1 * number2;
+            Console.WriteLine(result);
+            Console.ReadKey();
+
         }
 
 
